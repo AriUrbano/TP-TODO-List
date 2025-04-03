@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Gestor de Tareas</h1>
+    <div class="task-form">
+        <input type="text" class="task-input" placeholder="Nueva tarea...">
+        <button class="add-btn">Agregar</button>
+    </div>
+    <div class="filters">
+        <button class="filter-btn" data-filter="all">Todas</button>
+        <button class="filter-btn" data-filter="completed">Completadas</button>
+        <button class="filter-btn" data-filter="pending">Pendientes</button>
+    </div>
+    <button class="clear-completed">Eliminar completadas</button>
+    <ul class="task-list"></ul>
+    <div class="stats">
+        <h3>Estadísticas</h3>
+        <p id="fastest-task"></p>
+    </div>
+    <script src="node.js"></script>
+</body>
+</html>
